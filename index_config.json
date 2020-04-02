@@ -1,41 +1,12 @@
-//{
-//"settings" : {
-//    "number_of_shards": 1,
-//    "number_of_replicas": 1
-//},
-//
-//"mappings": {
-//        "properties": {
-//            "title": {"type": "text"},
-//            "vector": {"type":  "dense_vector", "dims":  1000}
-//        }}
-//}
-
 {
-  "took": 4,
-  "timed_out": false,
-  "_shards": {
-    "total": 1,
-    'successful': 1,
-    'skipped': 0,
-    'failed': 0
-  },
-  'hits': {
-    'total': {
-      'value': 1,
-      'relation': 'eq'
-    },
-    'max_score': 1.0714841,
-    'hits': [
-      {
-        '_index': "uae_plates",
-        '_type': '_doc',
-        '_id': '6FifFXEBEohyDLogOhYz',
-        '_score': 1.0714841,
-        '_source': {
-          'title': 'Abu Dhabi'
-        }
-      }
-    ]
-  }
+"settings" : {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+},
+
+"mappings": {
+        "properties": {
+            "title": {"type": "text"},
+            "vector": {"type":  "dense_vector", "dims":  1000}
+        }}
 }
